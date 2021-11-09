@@ -33,11 +33,11 @@
 
 <body>
   <div id="theme-wrapper">
+    <!-- 顶部导航栏 -->
     <header class="navbar" id="header-navbar">
       <div class="container">
         <a href="" id="logo" class="navbar-brand">
           同步监控
-          <!-- <img src="static/picture/logo.png" alt="" class="normal-logo logo-white"> -->
         </a>
         <div class="clearfix">
           <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
@@ -71,7 +71,7 @@
 
 
 
-              <li class="dropdown hidden-xs">
+              <!-- <li class="dropdown hidden-xs">
                 <a class="btn dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-tasks"></i>
                   <span class="count">5</span>
@@ -159,11 +159,7 @@
                     </a>
                   </li>
                 </ul>
-              </li>
-
-
-
-
+              </li> -->
 
               <li class="dropdown hidden-xs">
                 <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -220,7 +216,7 @@
                 </ul>
               </li>
 
-              <li class="dropdown hidden-xs">
+              <!-- <li class="dropdown hidden-xs">
                 <a class="btn dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
                   <span class="count">16</span>
@@ -285,7 +281,8 @@
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
+
               <li class="dropdown profile-dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="static/picture/scarlet-159.png" alt="">
@@ -298,6 +295,7 @@
                   <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
                 </ul>
               </li>
+
               <!-- <li class="dropdown language hidden-xs">
                 <a class="btn dropdown-toggle" data-toggle="dropdown">
                   English
@@ -321,52 +319,41 @@
                   </li>
                 </ul>
               </li> -->
+
             </ul>
           </div>
         </div>
       </div>
     </header>
+
     <div id="page-wrapper" class="container">
       <div class="row">
+        <!-- 左侧菜单栏 -->
         <div id="nav-col">
           <section id="col-left" class="col-left-nano">
             <div id="col-left-inner" class="col-left-nano-content">
-              <div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
-                <img alt="" src="static/picture/scarlet-159.png">
-                <div class="user-box">
-                  <span class="name">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      Jennifer L.
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="user-profile.html"><i class="fa fa-user"></i>Profile</a></li>
-                      <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
-                      <li><a href="#"><i class="fa fa-envelope-o"></i>Messages</a></li>
-                      <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
-                    </ul>
-                  </span>
-                  <span class="status">
-                    <i class="fa fa-circle"></i> Online
-                  </span>
-                </div>
-              </div>
               <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
                 <ul class="nav nav-pills nav-stacked">
+
                   <li class="nav-header nav-header-first hidden-sm hidden-xs">
-                    Navigation
+                    监控
                   </li>
                   <li class="active">
                     <a href="">
                       <i class="fa fa-dashboard"></i>
-                      <span>Dashboard</span>
-                      <span class="label label-primary label-circle pull-right">23</span>
+                      <span>实时监控</span>
+                      <!-- <span class="label label-primary label-circle pull-right">23</span> -->
                     </a>
                   </li>
+
+                  <li class="nav-header nav-header-first hidden-sm hidden-xs">
+                    管理
+                  </li>
+                  <!-- 系统管理 -->
                   <li>
                     <a href="#" class="dropdown-toggle">
-                      <i class="fa fa-table"></i>
-                      <span>Tables</span>
+                      <i class="fa fa-desktop"></i>
+                      <span>系统管理</span>
                       <i class="fa fa-angle-right drop-icon"></i>
                     </a>
                     <ul class="submenu">
@@ -387,10 +374,12 @@
                       </li>
                     </ul>
                   </li>
+
+                  <!-- 设备管理 -->
                   <li>
                     <a href="#" class="dropdown-toggle">
-                      <i class="fa fa-envelope"></i>
-                      <span>Email</span>
+                      <i class="fa fa-th-large"></i>
+                      <span>设备管理</span>
                       <i class="fa fa-angle-right drop-icon"></i>
                     </a>
                     <ul class="submenu">
@@ -411,10 +400,11 @@
                       </li>
                     </ul>
                   </li>
+
                   <li>
                     <a href="#" class="dropdown-toggle">
-                      <i class="fa fa-bar-chart-o"></i>
-                      <span>Graphs</span>
+                      <i class="fa fa-user"></i>
+                      <span>用户管理</span>
                       <i class="fa fa-angle-right drop-icon"></i>
                     </a>
                     <ul class="submenu">
@@ -440,7 +430,8 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
+
+                  <!-- <li>
                     <a href="widgets.html">
                       <i class="fa fa-th-large"></i>
                       <span>Widgets</span>
@@ -709,9 +700,9 @@
                         <a href="extra-grid.html">
                           Grid
                         </a>
-                      </li>
-                    </ul>
-                  </li>
+                      </li> -->
+                </ul>
+                </li>
 
                 </ul>
               </div>
@@ -719,6 +710,8 @@
           </section>
           <div id="nav-col-submenu"></div>
         </div>
+
+        <!-- 页面正文 -->
         <div id="content-wrapper">
           <div class="row">
             <div class="col-lg-12">
@@ -749,6 +742,21 @@
                   </div>
                 </div>
               </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="main-box">
+                    <header class="main-box-header clearfix">
+                      <h2>Donut flavours</h2>
+                    </header>
+                    <div class="main-box-body clearfix">
+                      <div id="hero-donut"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                   <div class="main-box small-graph-box emerald-bg">
@@ -1699,18 +1707,20 @@
       </div>
     </div>
   </div>
+
+  <!-- 工具调整栏 -->
   <div id="config-tool" class="closed">
     <a id="config-tool-cog">
       <i class="fa fa-cog"></i>
     </a>
     <div id="config-tool-options">
-      <h4>Layout Options</h4>
+      <h4>布局选项</h4>
       <ul>
         <li>
           <div class="checkbox-nice">
             <input type="checkbox" id="config-fixed-header">
             <label for="config-fixed-header">
-              Fixed Header
+              顶部固定
             </label>
           </div>
         </li>
@@ -1718,7 +1728,7 @@
           <div class="checkbox-nice">
             <input type="checkbox" id="config-fixed-sidebar">
             <label for="config-fixed-sidebar">
-              Fixed Left Menu
+              左侧菜单栏固定
             </label>
           </div>
         </li>
@@ -1726,7 +1736,7 @@
           <div class="checkbox-nice">
             <input type="checkbox" id="config-fixed-footer">
             <label for="config-fixed-footer">
-              Fixed Footer
+              底部固定
             </label>
           </div>
         </li>
@@ -1734,7 +1744,7 @@
           <div class="checkbox-nice">
             <input type="checkbox" id="config-boxed-layout">
             <label for="config-boxed-layout">
-              Boxed Layout
+              盒子布局
             </label>
           </div>
         </li>
@@ -1742,13 +1752,13 @@
           <div class="checkbox-nice">
             <input type="checkbox" id="config-rtl-layout">
             <label for="config-rtl-layout">
-              Right-to-Left
+              左右布局对调
             </label>
           </div>
         </li>
       </ul>
       <br>
-      <h4>Skin Color</h4>
+      <h4>主题颜色</h4>
       <ul id="skin-colors" class="clearfix">
         <li>
           <a class="skin-changer" data-skin="theme-navyBlue" data-toggle="tooltip" title="Navy Blue"
@@ -2073,6 +2083,21 @@
           });
         }
         return false;
+      });
+    });
+
+    $(function ($) {
+      graphDonut = Morris.Donut({
+        element: 'hero-donut',
+        data: [
+          { label: 'Jam', value: 25 },
+          { label: 'Frosted', value: 40 },
+          { label: 'Custard', value: 25 },
+          { label: 'Sugar', value: 10 }
+        ],
+        colors: ['#A9D86E', '#ffc107', '#FF6C60', '#58DDD0', '#9972B5', '#90a4ae'],
+        formatter: function (y) { return y + "%" },
+        resize: true
       });
     });
   </script>
